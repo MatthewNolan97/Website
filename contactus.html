@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div id="banner">
+    <div class="banner">
         <div>
             <header>
                 <h1>ShoeWow</h1>
@@ -20,10 +20,10 @@
                 <ul>
                     <li class="Nav2"><a href="./index.html">Home</a></li>
                     <li class="Nav2"><a href="./hours.html">Hours Of Operation</a></li>
-                    <li class="Nav2"><a href="./services.html">Services & Booking</a></li>
+                    <li class="Nav2"><a href="./services.html">Services</a></li>
                     <li class="Nav2"><a href="./contactus.html">Contact Us</a></li>
                     <li class="Nav"><a href="./links.html">Useful Links</a></li>
-                    <li class="Nav"><a href="./mutimedia.html">Awesome video</a></li>
+                    <li class="Nav"><a href="./Testimonials.html">Customer Reviews</a></li>
                     <li class="Nav"><a href="./photos.html">Photos</a></li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
             <label for="fullName">Full Name:</label>
             <input type="text" name="fullName" id="fullName" maxlength="30" placeholder="Askalamando Jeanguy">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email"  placeholder="Askalamando@Jeanguy.qc">
+            <input type="email" name="email" id="email" placeholder="Askalamando@Jeanguy.qc" size="40">
             <label for="phone">Phone Number:</label>
             <input type="text" name="phone" id="phone" size="16" maxlength="16" placeholder="(819)-123-4567">
             <label for="reason">Reason For Contacting Us:</label>
@@ -48,13 +48,38 @@
                 <option value="review">Leave a Review</option>
                 <option value="suggestions">Leave a suggestion</option>
             </select>
-            <label for="customerMessage">Message</label>
+            <label>Message:</label>
             <textarea>please enter your message here and we shall get back to you as soon as we can.
-            </textarea>
-                <div id="actions">
-                    <input type="submit" value="Send now.">
-                    <input type="reset" value="Clear"></div>
-                
+            </textarea><br>
+            <fieldset>
+                <legend>
+                    How should we try to contact you back first?
+                </legend>
+                <div>
+                    <input checked type="radio" id="phone2" name="method" value="phone2">
+                    <label class="RadioLabel" for="phone2">Phone</label>
+                </div>
+                <div> <input type="radio" id="email2" name="method" value="email2">
+                    <label class="RadioLabel" for="email2">Email</label>
+                </div>
+            </fieldset><br>
+            <fieldset>
+                <legend>
+                    How did you find out about us?
+                </legend>
+                <input type="checkbox" id="internet" name="internet" value="Internet">
+                <label for="internet">Internet</label><br>
+                <input type="checkbox" id="word" name="word" value="wordofmouth">
+                <label for="word">Word of mouth</label>
+                <input type="checkbox" id="eyesight" name="eyesight" value="Eyesight">
+                <label for="eyesight">Drove by and saw it</label>
+
+            </fieldset><br>
+            <div id="actions">
+                <input type="submit" value="Send now.">
+                <input type="reset" value="Clear">
+            </div>
+
 
 
 
@@ -65,13 +90,12 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./hours.html">Hours Of Operation</a></li>
-                <li><a href="./services.html">Services & Booking</a></li>
+                <li><a href="./services.html">Services</a></li>
                 <li><a href="./contactus.html">Contact Us</a></li>
                 <li><a href="./links.html">Useful Links</a></li>
-                <li><a href="./mutimedia.html">Awesome video</a></li>
+                <li><a href="./Testimonials.html">Customer Reviews</a></li>
                 <li><a href="./photos.html">Photos</a></li>
             </ul>
-
 
 
 
@@ -89,10 +113,12 @@
         </address>
         <small>
             Copyright &copy; 2023, ShoeWow.
-        </small>
-
+        </small><br>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!">
+        </a>
     </footer>
-
 </body>
 
 </html>
