@@ -1,0 +1,155 @@
+
+:root {
+    --Navy: #05445E;
+    --BGrotto: #189ab4;
+    --BGreen: #75E6DA;
+    --BBlue: #d4f1f4;
+    --Black: #000000;
+    --White: #FFF;
+    --mainfont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    --secondfont:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+}
+.banner{
+    border: 3px solid var(--Black);
+    background-color: var(--BBlue);
+    color: var(--Black);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: var(--mainfont);
+}
+
+.banner div:nth-of-type(1){
+    margin-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div img{
+max-height: 150px;
+max-width: 150px;
+}
+
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none; font-size: 1em;
+    font-family: var(--mainfont);
+}
+
+body{
+   background-color: var(--BGrotto); 
+   margin: 0;
+   color: var(--Black);
+   font-family: var(--mainfont);
+}
+.banner a{
+    color: var(--Navy) ;
+    padding: 5px;
+    font-size: 1em;
+    
+}
+
+    
+
+.banner h1{
+    font-size: 3em; 
+    font-family: var(--secondfont);
+    margin: auto;
+}
+.banner h2{
+    font-size: 1.75em;
+    font-family: var(--secondfont);
+    color: var(--BGreen);
+    margin: auto;
+}
+
+footer{
+   text-align: center;
+    display: block;
+    font-style: italic;
+    background-color: #D4F1F4;
+    width: 100%;
+    font-size: 0.75em;
+    color: var(--Black);
+    font-family: var(--mainfont);
+}
+footer a {
+    padding: 5px;
+    color: var(--Navy);
+    font-size: 0.75em;
+    font-family: var(--mainfont) ;
+}
+.Nav{
+    display: none;
+
+}
+.Nav2{
+    display: inline-block;
+}
+
+.next{
+    text-align: center;
+}
+.grid{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.gridcaption{
+    color: var(--Black);
+    font-weight: bold;
+    text-align: center;
+}
+img{
+    width: 50%;
+    height: auto;
+}
+
+
+@media (min-width:768px) {
+    
+    .Nav {
+        display: inline-block; 
+    }
+    .Nav2 {
+        display: inline-block;
+    }
+    div ul li :hover {
+    background-color: var(--BGreen);
+    }
+    
+        footer ul {
+            font-size: 2em;
+    
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 10px;
+        justify-content: space-around;
+        column-gap: 15px;
+    }
+    .gridcaption{
+        color:var(--Black);
+        font-weight: bold;
+    }
+    img{
+        width: 75%;
+        height: auto;
+    }
+    .gridcaption{
+        color: var(--Black);
+        font-weight: bold;
+    }
+   main{
+    min-block-size: 100vb;
+    font-family: var(--mainfont);
+}
+}
+
